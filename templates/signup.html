@@ -24,12 +24,49 @@
                             <span>Welcome to CALU!</span>
                         </h1>
                         <p class="login__description">
-                            Welcome! Please login to continue.
+                            Please sign up here!
                         </p>
                     </div>
                     
                     <div>
                         <div class="login__inputs">
+                            
+                            <div>
+                                <label for="" class="login__label">First Name</label>
+                                <input type="text" placeholder="Tamirat" required class="login__input">
+                            </div>
+                            
+                            <div>
+                                <label for="" class="login__label">Last Name</label>
+                                <input type="text" placeholder="Desta" required class="login__input">
+                            </div>
+                            
+
+                            <div>
+                                <label for="" class="login__label">Phone Number</label>
+                                <input type="text" placeholder="+251-94-455-5677" required class="login__input">
+                            </div>
+
+                            <div>
+                                <label for="" class="login__label">Gender</label>
+                                <input type="text" placeholder="Male/Female" required class="login__input">
+                            </div>
+
+                            <div>
+                                <label for="" class="login__label">Date Of Birth</label>
+                                <input type="text" placeholder="19/07/2023" required class="login__input">
+                            </div>
+
+                            <div>
+                                <label for="" class="login__label">Nationality</label>
+                                <input type="text" placeholder="Ethiopian" required class="login__input">
+                            </div>
+
+                            <div>
+                                <label for="" class="login__label">City</label>
+                                <input type="text" placeholder="Addis Ababa" required class="login__input">
+                            </div>
+                            
                             <div>
                                 <label for="" class="login__label">Email</label>
                                 <input type="email" placeholder="Enter your email address" required class="login__input">
@@ -42,6 +79,14 @@
                                     <input type="password" placeholder="Enter your password" required class="login__input" id="input-pass">
                                     <i class="ri-eye-off-line login__eye" id="input-icon"></i>
                                 </div>
+                                <label for="" class="login__label">Confirm Password</label>
+    
+                                <div class="login__box">
+                                    <input type="password" placeholder="Confirm your password" required class="login__input" id="input-pass">
+                                    <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+                                </div>
+
+                                
                             </div>
                         </div>
 
@@ -65,7 +110,7 @@
 
 
         <!--=============== MAIN JS ===============-->
-        <script src="static/js/main.js"></script>
-        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
     </body>
 </html>

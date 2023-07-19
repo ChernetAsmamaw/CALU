@@ -11,6 +11,8 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://calu_user:password@localhost/calu'
 app.config['SECRET_KEY'] = 'mysecretkey'
 db = SQLAlchemy(app)
+
+
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(50))
@@ -26,6 +28,7 @@ class User(UserMixin, db.Model):
     type = db.Column(db.String(50))
     last_seen = db.Column(db.DateTime, default=datetime.utcnow)
     image = db.Column(db.LargeBinary)
+
     def set_image(self, filename):
         with open(filename, 'rb') as file:
             self.image = file.read()

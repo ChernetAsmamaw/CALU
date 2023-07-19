@@ -5,12 +5,12 @@ from sqlalchemy import func
 from flask_login import UserMixin
 from flask_socketio import SocketIO, emit
 from datetime import date, datetime
-db = SQLAlchemy(app)
+
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://calu_user:password@localhost/calu'
 app.config['SECRET_KEY'] = 'mysecretkey'
-
+db = SQLAlchemy(app)
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(50))

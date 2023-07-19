@@ -9,8 +9,8 @@ def index():
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
-     if request.method == 'POST':
-         return render_template('signup.html')
+    if request.method == 'POST':
+        return render_template('login.html')
     return render_template('signup.html')
 
 

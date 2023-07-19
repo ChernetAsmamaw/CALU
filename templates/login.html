@@ -8,19 +8,20 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/styles/styles.css">
-
-        <title>Beautiful glass login form - Bedimcode</title>
+        <link rel="stylesheet" href="static/styles/styles.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+        <title>Login page for CALU</title>
     </head>
     <body>
         <div class="container">
             <div class="login__content">
-                <img src="assets/images/banner_3.png" alt="login image" class="login__img">
-
+                
+                <img src="{{ url_for('static', filename='images/banner_3.png') }}" alt="Login image">
+                
                 <form action="" class="login__form">
                     <div>
                         <h1 class="login__title">
-                            <span>Welcome</span> Back
+                            <span>Welcome!</span>
                         </h1>
                         <p class="login__description">
                             Welcome! Please login to continue.

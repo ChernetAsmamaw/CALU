@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, Blueprint, get_flashed_messages
+from models import app, User, db
 
-app = Flask(__name__)
 
 @app.route('/')
 def index():

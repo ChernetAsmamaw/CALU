@@ -204,6 +204,20 @@ img {
   text-decoration: none;
 }
 
+
+/* =============== REGISTRATION FORM =============== */
+
+.registration-sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration-section {
+  width: 49%;
+}
+
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 360px) {

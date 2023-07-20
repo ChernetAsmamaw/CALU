@@ -54,7 +54,8 @@ def signup():
             date_of_birth=date_of_birth,
             gender=gender,
             city=city,
-            state=state,
+            country=country,
+            major=major,
             type=user_type,
             image=filename.encode('utf-8')
         )

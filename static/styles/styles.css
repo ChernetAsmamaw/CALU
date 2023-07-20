@@ -136,6 +136,19 @@ img {
   font-size: 1.25rem;
   cursor: pointer;
 }
+
+.login__phone {
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  right: 0.75rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
 .login__check {
   display: flex;
   column-gap: 0.5rem;

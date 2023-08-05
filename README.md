@@ -24,50 +24,34 @@ The CALU project aims to provide an interactive and engaging learning environmen
 
 To install CALU, please follow these steps:
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/CALU.git
-Install dependencies:
-bash
-Copy
-npm install
-Configure the application:
-Update the configuration files with any necessary settings, such as database connection details or API keys.
+- Clone the repository: git clone https://github.com/yourusername/CALU.git
 
-Launch the application:
+- Install dependencies: npm install
 
-bash
-Copy
-npm start
-Access the application:
-Open your web browser and navigate to http://localhost:3000 to access CALU.
-Contributing
+- Configure the application: Update the configuration files with any necessary settings, such as database connection details or API keys.
+
+- Launch the application: Run npm start to start the CALU application.
+
+- Access the application: Open your web browser and navigate to http://localhost:3000 to access CALU.
+
+## Contributing
 We welcome contributions to the CALU project! If you would like to contribute, please follow these guidelines:
 
-Fork the repository.
+- Fork the repository.
 
-Create a new branch for your feature or bug fix:
+- Create a new branch for your feature or bug fix: git checkout -b feature/your-feature-name.
 
-bash
-Copy
-git checkout -b feature/your-feature-name
-Make your changes and ensure that the code adheres to the project's coding standards.
+- Make your changes and ensure that the code adheres to the project's coding standards.
 
-Commit your changes:
+- Commit your changes: git commit -m "Add your commit message here".
 
-bash
-Copy
-git commit -m "Add your commit message here"
-Push to your forked repository.
+- Push to your forked repository.
 
-Submit a pull request, explaining the changes and their purpose.
+- Submit a pull request, explaining the changes and their purpose.
 
-Support
+## Support
 If you encounter any issues or have questions regarding CALU, please reach out to our support team at support@caluproject.com. We are here to assist you and address any concerns.
 
-License
-The CALU project is licensed under the MIT License. For more details, please refer to the LICENSE file included in the repository.
+## License
+For more details, please refer to the LICENSE file included in the repository.
 
-Copy
-
-Feel free to further customize and expand upon this code snippet to fit your specific needs and provide more detailed information about your CALU project.

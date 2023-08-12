@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'core',
     'user',
     'corsheaders',
-    'drf_yasg',
 ]
 
 CORS_ORIGIN_ALLOW_ALL=True
@@ -95,7 +94,7 @@ WSGI_APPLICATION = 'clubs_and_events.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'calubackenddb',  
+        'NAME': 'calubackendb',  
         'USER': 'postgres',
         'PASSWORD': 'Sudanman',
         'HOST': 'localhost', 

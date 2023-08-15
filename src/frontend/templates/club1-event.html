@@ -18,11 +18,6 @@
     <link rel="icon" href="../static/img/blue-icon-small.ico">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Calu After Login Home Page</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="../static/css/club1.css" />
-
 </head>
 
 <body class="font-[poppins] bg-gradient-to-t from-[#ffffff] to-[#ffffff] h-screen">
@@ -58,7 +53,7 @@
             </div>
 
             <div>
-                <div class="mx-auto w-100 p-6 flex justify-end">
+                <div class="mx-auto w-100 p-2 flex justify-end">
                     <!-- Drodown -->
                     <div x-data="{isOpen:true}" class="relative inline-block">
                         <!-- Dropdown Button -->
@@ -92,8 +87,7 @@
 
                             <div class="border-t border-slate-500/30"></div>
                             <div class="flex flex-col">
-                                <a href="./profile.html"
-                                    class="flex items-center gap-3 rounded-md py-2 px-3 hover:bg-slate-800">
+                                <a href="#" class="flex items-center gap-3 rounded-md py-2 px-3 hover:bg-slate-800">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                         class="h-5 w-5">
                                         <path fill-rule="evenodd"
@@ -124,6 +118,11 @@
                             </button>
                         </div>
                     </div>
+
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl pt-2 pl-2 cursor-pointer md:hidden"></ion-icon>
+
+
                 </div>
 
             </div>
@@ -131,7 +130,6 @@
 
         </nav>
     </header>
-
 
 
 
@@ -899,27 +897,9 @@
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const dropdownButton = document.querySelector('.relative.inline-block button');
-            const dropdownMenu = document.querySelector('.absolute.right-0');
 
-            dropdownButton.addEventListener('click', function () {
-                dropdownMenu.classList.toggle('hidden');
-            });
-        });
-    </script>
-
-
-
-    <script>
-        const navLinks = document.querySelector('.nav-links')
-        function onToggleMenu(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle('top-[9%]')
-        }
-    </script>
-
+    <script src="../static/js/profile_dropdown.js"></script>
+    <script src="../static/js/humberger_menu.js"></script>
 
 
 

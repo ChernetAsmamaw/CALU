@@ -53,7 +53,7 @@
             </div>
 
             <div>
-                <div class="mx-auto w-100 p-6 flex justify-end">
+                <div class="mx-auto w-100 p-2 flex justify-end">
                     <!-- Drodown -->
                     <div x-data="{isOpen:true}" class="relative inline-block">
                         <!-- Dropdown Button -->
@@ -118,6 +118,11 @@
                             </button>
                         </div>
                     </div>
+
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl pt-2 pl-2 cursor-pointer md:hidden"></ion-icon>
+
+
                 </div>
 
             </div>
@@ -141,7 +146,7 @@
 
 
 
-            <div class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective py-2">
+            <div class="w-[350px] h-[460px] bg-transparent cursor-pointer group perspective py-2">
                 <div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 py-4">
                     <div class="absolute backface-hidden border-8 border-blue-900 w-full h-full">
                         <img src="../static/img/event-4.jpg" class="w-full h-full" />
@@ -169,7 +174,7 @@
 
 
 
-            <div class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective py-2">
+            <div class="w-[350px] h-[460px] bg-transparent cursor-pointer group perspective py-2">
                 <div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 py-4">
                     <div class="absolute backface-hidden border-8 border-blue-900 w-full h-full">
                         <img src="../static/img/event-3.jpg" class="w-full h-full" />
@@ -199,7 +204,7 @@
 
 
 
-            <div class="w-[300px] h-[420px] bg-transparent cursor-pointer group perspective py-2">
+            <div class="w-[350px] h-[460px] bg-transparent cursor-pointer group perspective py-2">
                 <div class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 py-4">
                     <div class="absolute backface-hidden border-8 border-blue-900 w-full h-full">
                         <img src="../static/img/event-2.jpg" class="w-full h-full" />
@@ -396,26 +401,8 @@
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const dropdownButton = document.querySelector('.relative.inline-block button');
-            const dropdownMenu = document.querySelector('.absolute.right-0');
-
-            dropdownButton.addEventListener('click', function () {
-                dropdownMenu.classList.toggle('hidden');
-            });
-        });
-    </script>
-
-
-
-    <script>
-        const navLinks = document.querySelector('.nav-links')
-        function onToggleMenu(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle('top-[9%]')
-        }
-    </script>
+    <script src="../static/js/profile_dropdown.js"></script>
+    <script src="../static/js/humberger_menu.js"></script>
 
 
 

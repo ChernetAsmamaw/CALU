@@ -17,14 +17,7 @@
     <!--Icons-->
     <link rel="icon" href="../static/img/blue-icon-small.ico">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <title>Calu After Login Profile Page</title>
-
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="../static/css/profile.css" />
-
+    <title>Calu After Login Home Page</title>
 </head>
 
 <body class="font-[poppins] bg-gradient-to-t from-[#ffffff] to-[#ffffff] h-screen">
@@ -60,7 +53,7 @@
             </div>
 
             <div>
-                <div class="mx-auto w-100 p-6 flex justify-end">
+                <div class="mx-auto w-100 p-2 flex justify-end">
                     <!-- Drodown -->
                     <div x-data="{isOpen:true}" class="relative inline-block">
                         <!-- Dropdown Button -->
@@ -121,10 +114,15 @@
                                         d="M7.5 3.75A1.5 1.5 0 006 5.25v13.5a1.5 1.5 0 001.5 1.5h6a1.5 1.5 0 001.5-1.5V15a.75.75 0 011.5 0v3.75a3 3 0 01-3 3h-6a3 3 0 01-3-3V5.25a3 3 0 013-3h6a3 3 0 013 3V9A.75.75 0 0115 9V5.25a1.5 1.5 0 00-1.5-1.5h-6zm10.72 4.72a.75.75 0 011.06 0l3 3a.75.75 0 010 1.06l-3 3a.75.75 0 11-1.06-1.06l1.72-1.72H9a.75.75 0 010-1.5h10.94l-1.72-1.72a.75.75 0 010-1.06z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                                <span><a href="./home.html">Logout</a></span>
+                                <span>Logout</span>
                             </button>
                         </div>
                     </div>
+
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl pt-2 pl-2 cursor-pointer md:hidden"></ion-icon>
+
+
                 </div>
 
             </div>
@@ -142,11 +140,8 @@
 
 
 
+
     <main>
-
-
-
-
 
 
         <!--User Account Profile-->
@@ -360,44 +355,9 @@
 
 
 
-    <script>
-        document.getElementById('saveButton').addEventListener('click', function () {
-            const username = document.getElementById('username').value;
-            const email = document.getElementById('email').value;
-
-            alert(`Saved! \nUsername: ${username} \nEmail: ${email}`);
-        });
-    </script>
-
-
-
-
-
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const dropdownButton = document.querySelector('.relative.inline-block button');
-            const dropdownMenu = document.querySelector('.absolute.right-0');
-
-            dropdownButton.addEventListener('click', function () {
-                dropdownMenu.classList.toggle('hidden');
-            });
-        });
-    </script>
-
-
-
-    <script>
-        const navLinks = document.querySelector('.nav-links')
-        function onToggleMenu(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle('top-[9%]')
-        }
-    </script>
-
-
-
+    <script src="../static/js/user_profile.js"></script>
+    <script src="../static/js/profile_dropdown.js"></script>
+    <script src="../static/js/humberger_menu.js"></script>
 
 
 

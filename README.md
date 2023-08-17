@@ -1,5 +1,5 @@
 ------------
-# CALU
+<h1> CALU <img src=".\src\frontend\static\img\blue-icon-small.ico"> </h1>
 
 ##### Welcome to Clubs at ALU! 
 This project aims to address the communication and efficiency gaps within the African Leadership University (ALU) club system. The current system lacks a proper platform for clubs to connect with their members, making it challenging for club members to stay informed, participate fully, and for club managers to communicate effectively.

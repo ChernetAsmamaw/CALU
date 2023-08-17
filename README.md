@@ -1,4 +1,4 @@
-<img src=".\src\frontend\static\img\blue-icon-small.ico" width="540" height="420">
+<img src=".\src\frontend\static\img\blue-icon.png" width="500" height="40">
 
 ##### Welcome to Clubs at ALU! 
 This project aims to address the communication and efficiency gaps within the African Leadership University (ALU) club system. The current system lacks a proper platform for clubs to connect with their members, making it challenging for club members to stay informed, participate fully, and for club managers to communicate effectively.

@@ -29,7 +29,7 @@ The project's scope is tailored to meet the specific needs of ALU students and c
 
 ## Support
 
-If you encounter any issues or have questions regarding the Clubs at ALU platform, please reach out to our support team at support@clubsatalu.com. We are here to assist you and address any concerns.
+- If you encounter any issues or have questions regarding the Clubs at ALU platform, please reach out to our support team at support@clubsatalu.com. We are here to assist you and address any concerns.
 ---
 ## License
 

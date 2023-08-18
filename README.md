@@ -1,4 +1,4 @@
-<img src=".\src\frontend\static\img\blue-icon.png" width="380" height="320">
+<img src=".\src\frontend\static\img\blue-icon.png" width="400" height="360">
 
 # Welcome to Clubs at ALU! 
 This project aims to address the communication and efficiency gaps within the African Leadership University (ALU) club system. The current system lacks a proper platform for clubs to connect with their members, making it challenging for club members to stay informed, participate fully, and for club managers to communicate effectively.
@@ -27,42 +27,12 @@ The project's scope is tailored to meet the specific needs of ALU students and c
 
 - Feedback Mechanism: A feedback system to gather suggestions and input from users, ensuring continuous improvement of the platform.
 
-## Installation
-
-To get started with the Clubs at ALU platform, please follow these steps:
-
-- Clone the repository: `git clone https://github.com/yourusername/ClubsAtALU.git`
-
-- Install dependencies: `npm install`
-
-- Configure the application: Update the configuration files with any necessary settings, such as database connection details or API keys.
-
-- Launch the application: Run `npm start` to start the Clubs at ALU platform.
-
-- Access the application: Open your web browser and navigate to `http://localhost:3000` to access the platform.
-
-## Contributing
-
-We welcome contributions to the Clubs at ALU project! If you would like to contribute, please follow these guidelines:
-
-1. Fork the repository.
-
-2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name`.
-
-3. Make your changes and ensure that the code adheres to the project's coding standards.
-
-4. Commit your changes: `git commit -m "Add your commit message here"`.
-
-5. Push to your forked repository.
-
-6. Submit a pull request, explaining the changes and their purpose.
-
 ## Support
 
 If you encounter any issues or have questions regarding the Clubs at ALU platform, please reach out to our support team at support@clubsatalu.com. We are here to assist you and address any concerns.
-
+---
 ## License
 
 For more details, please refer to the LICENSE file included in the repository.
 
----
+

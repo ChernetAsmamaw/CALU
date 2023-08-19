@@ -18,6 +18,9 @@
     <link rel="icon" href="../static/img/blue-icon-small.ico">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Calu After Login Home Page</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body class="font-[poppins] bg-gradient-to-t from-[#ffffff] to-[#ffffff] h-screen">
@@ -154,34 +157,49 @@
             <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
 
 
-                <div class="w-full p-4 flex justify-center pb-16">
+                <div class="w-full p-4 flex justify-center pb-12">
                     <h2 class="text-sky-700 xl:text-3xl font-bold md:text-2xl sm:text-xl">Chernet's Profile</h2>
                 </div>
 
 
 
-                <div class="flex flex-col md:flex-row justify-between mb-4">
-                    <div class="profile-picture mb-4 md:mb-0">
+                <div class="flex flex-col md:flex-row justify-even mb-4">
+                    <div class="profile-picture mb-4 md:mb-0 xl:pr-32 md:pr-16">
                         <img src="../static/img/IMG_1035.jpeg" alt="Profile Picture"
-                            class="rounded-full w-[25vh] h-[25vh] mx-auto md:mx-0">
+                            class="rounded-full w-[25vh] h-[25vh] mx-auto md:mx-0  border-4 border-gray-500">
                         <div class="image-options mt-2 flex justify-around">
-                            <button class="btn-delete py-2 px-4 rounded bg-red-500 text-white"
+                            <button class="btn-delete py-2 px-4 rounded bg-red-500 text-white border-2 border-gray-400"
                                 type="button">Delete</button>
-                            <button class="btn-change py-2 px-4 rounded bg-blue-500 text-white"
+                            <button class="btn-change py-2 px-4 rounded bg-blue-500 text-white border-2 border-gray-400"
                                 type="button">Change</button>
                         </div>
                     </div>
-                    <div class="data-list">
+
+
+
+                    <div class="data-list flex-col w-auto">
                         <!-- Existing inputs... -->
 
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="occupation">
-                                Full Name
+                                First Name
                             </label>
                             <input
                                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="name" type="text" placeholder="Chernet Asmamaw">
+                                id="firstname" type="text" placeholder="Chernet">
                         </div>
+
+
+
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="occupation">
+                                Last Name
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="last name" type="text" placeholder="Asmamw">
+                        </div>
+
 
 
                         <div class="mb-4">
@@ -197,18 +215,6 @@
 
                         <div class="mb-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="occupation">
-                                Password
-                            </label>
-                            <input
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="password" type="text" placeholder="***********">
-                        </div>
-
-
-
-
-                        <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2" for="occupation">
                                 Email
                             </label>
                             <input
@@ -217,36 +223,81 @@
                         </div>
 
 
+
+
+
                         <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2" for="occupation">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                                Password
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="password" type="password" placeholder="***********">
+                        </div>
+
+
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="dob">
+                                Date of Birth
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="dob" type="date">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">
+                                Phone Number
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="phone" type="text" placeholder="Phone Number">
+                        </div>
+
+
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="major">
                                 Major
                             </label>
-                            <input
+                            <select
                                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="major" type="text" placeholder="BSE M2022">
+                                id="gender">
+                                <option value="bel">BEL</option>
+                                <option value="bse">BSE</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
 
 
 
                         <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2" for="address">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="gender">
                                 Gender
                             </label>
-                            <input
+                            <select
                                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="gender" type="text" placeholder="Male">
+                                id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
                         </div>
 
 
 
-
                         <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2" for="address">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="adress">
                                 Study Location
                             </label>
-                            <input
+                            <select
                                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="address" type="text" placeholder="Addis Ababa Hub">
+                                id="gender">
+                                <option value="alu">ALU Campus</option>
+                                <option value="kigali">Kigali Hub</option>
+                                <option value="addis">Addis Ababa Hub</option>
+                                <option value="nairobi">Nairobi Hub</option>
+                                <option value="lagos">Lagos Hub</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
 
 

@@ -45,11 +45,6 @@
           <h2>Registration</h2>
           <form action="#" onsubmit="register()">
             <div class="input-box">
-              <span class="icon"><ion-icon name="person"></ion-icon></span>
-              <input autocomplete="off" autofocus type="text" id="username" required>
-              <label>Username</label>
-            </div>
-            <div class="input-box">
               <span class="icon"><ion-icon name="mail"></ion-icon></span>
               <input autocomplete="off" autofocus type="email" id="email" required>
               <label>Email</label>
@@ -58,6 +53,11 @@
               <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
               <input autocomplete="off" autofocus type="password" id="password" required>
               <label>Password</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input autocomplete="off" autofocus type="password" id="confirm-password" required>
+              <label>Confirm Password</label>
             </div>
             <div class="remember-forgot">
               <label><input type="checkbox"><a href="/src/frontend/templates/terms&conditions.html">I agree to the terms
@@ -74,6 +74,32 @@
 
     </div>
     </div>
+
+
+
+
+    <script>
+      function register(event) {
+        event.preventDefault();
+
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirm-password');
+
+        const email = emailInput.value;
+        const password = passwordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
+
+        if (password !== confirmPassword) {
+          alert("Passwords do not match. Please try again.");
+          return;
+        }
+
+        // Perform registration logic here
+        // ...
+      }
+    </script>
+
 
     <script src="../static/js/signup.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
